@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/***********************************************************/
+/*
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header p {
+    font-family: Inconsolata;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 35px 50px;
+}
+
+.container {
+    background-color: aqua;
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.img-container {
+    width: 50%;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    width: 540px;
+}
+
+.text-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}*/
+/*
+.first-text {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 40px 70px 10px 70px;
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 1em;
+    letter-spacing: -0.015em;
+    font-style: normal;
+}
+.second-text {
+    border: 1px solid red;
+    padding: 8px;
+    margin: 10px 300px 10px 70px;
+    font-family: Space Mono;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    font-style: normal;
+}
+.btn {
+    border: 1px solid purple;
+    margin: 2em;
+}
+*/
+/*.btn {
+    width: 150px;
+}*/
+
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: auto;
+}
+
+.header p {
+    font-family: Inconsolata;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 20px 15px;
+}
+.main-container {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    min-height: 100%;
+}
+.img-container {
+    margin: 10px 25px;
+    text-align: center;
+}
+
+.img-container img {
+    width: 200px;
+}
+
+.text-container {
+    margin: 10px 25px;
+}
+.first-text {
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 51px;
+    letter-spacing: 1px;
+    font-style: normal;
+    margin-left: 24px;
+}
+
+.second-text {
+    font-family: Space Mono;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.10em;
+    font-style: normal;
+    margin-top: 15px;
+    margin-left: 24px;
+}
+
+.btn {
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    width: 160px;
+    height: 60px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-left: 24px;
+    font-style: normal;
+    color: #FFF;
+    background-color: #48aaff;
+    border: 1px solid;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: background-color 200ms ease-in-out;
+}
+
+.btn:hover, .btn:focus{
+    background-color: #269aff;
+    color: white;
+}
+
+.footer {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    font-style: normal;
+    color: #BDBDBD;
+}
+.footer .link {
+    text-decoration: none;
+    color: #0096c7;
+}
+
+@media only screen and (min-width : 800px){
+    .container {
+        display: flex;
+        flex-direction: row;
+        min-height: 100%;
+    }
+    .img-container {
+        width: 50%;
+        text-align: center;
+    }
+    .img-container img {
+        width: 500px;
+    }
+    .text-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .first-text {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        width: 80%;
+        line-height: 80px;
+        font-size: 64px;
+    }
+    .second-text {
+        margin-bottom: 10px;
+        width: 45%;
+        line-height: 36px;
+    }
+    .header p {
+        margin-left: 50px;
+    }
+}
